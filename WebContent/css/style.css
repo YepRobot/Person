@@ -181,7 +181,7 @@ body {
 
 .login-form {
     text-align: center;
-    background-color: #00;
+    background-color: #000000;
     border-radius: 20px;
     width: 300px;
     height: 350px;
@@ -227,4 +227,17 @@ body {
 	border-bottom-right-radius: 15px;
 	
 	cursor: pointer;
+}
+
+
+.register-form{
+    text-align: center;
+    background-color: #000000;
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }

@@ -34,8 +34,9 @@
 		</div>
 	</div>
 
-	<div class="login-form" >
-		<form action="${pageContext.request.contextPath }/LoginServlet" method="post" onsubmit="return check()">
+	<div class="login-form">
+		<form action="${pageContext.request.contextPath }/LoginServlet"
+			method="post" onsubmit="return check()">
 			<input type="text" class="text" id="uname" name="username"
 				value="用户名" onfocus="this.value = '';"
 				onblur="if (this.value == '') {this.value = '用户名';}">
@@ -45,10 +46,10 @@
 					onblur="if (this.value == '') {this.value = 'password';}">
 			</div>
 
-			<input type="submit"  value="登录" onclick="check()"/>
-	
+			<input type="submit" value="登录" onclick="check()" />
 
-	</form>
+
+		</form>
 	</div>
 	<div class="header-top">
 

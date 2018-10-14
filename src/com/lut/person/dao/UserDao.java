@@ -31,7 +31,7 @@ public class UserDao extends BaseDao{
 		rs = pstmt.executeQuery();
 		if(rs.next()) {
 			user = new Users();
-			user.setUser_ID(rs.getInt("user_ID"));
+			user.setUser_ID(rs.getString("user_ID"));
 			user.setUser_Name(rs.getString("user_Name"));
 			user.setUser_Password(rs.getString("user_Password"));
 		}
