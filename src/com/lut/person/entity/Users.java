@@ -29,6 +29,18 @@ public class Users {
 		this.user_Status = user_Status;
 	}
 
+	public Users(String user_ID, String user_Name, String user_Password, int user_Gender, int user_Age, int user_Power
+			) {
+		super();
+		this.user_ID = user_ID;
+		this.user_Name = user_Name;
+		this.user_Password = user_Password;
+		this.user_Gender = user_Gender;
+		this.user_Age = user_Age;
+		this.user_Power = user_Power;
+		
+	}
+
 
 
 	public String getUser_ID() {

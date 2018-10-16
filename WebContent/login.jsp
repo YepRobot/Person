@@ -27,7 +27,7 @@
 						<li><a href="https://www.baidu.com/" class="scroll">Idea</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">学习</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">推荐</a></li>
-						<li><a href="https://www.baidu.com/" class="scroll">注册</a></li>
+						<li><a href="regist.jsp" class="scroll">注册</a></li>
 					</ul>
 				</div>
 			</div>

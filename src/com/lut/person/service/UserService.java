@@ -29,5 +29,23 @@ public class UserService {
 		return user;
     	
     }
+
+	/**
+	 * @作者 alex
+	 * @日期 2018年10月17日-上午1:09:32
+	 * @描述   
+	 */
+	public int regist(Users user) {
+		int result = 0;
+		try {
+			result = ud.regist(user); 
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			ud.closeConnection();
+		}
+		return result;
+		
+	}
    
 }

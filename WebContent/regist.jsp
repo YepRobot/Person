@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,20 +47,24 @@
 					<td><input type="text" id="userId" name="userId" ></td>
 				</tr>
                 <tr>
-					<td >性别：</td>
-					<td><input type="text" id="userGender" name="userId" ></td>
+                <td >性别：</td>
+                <td>
+                <select id="userGender" name="userGender">
+						<option value =0> 女</option>
+						<option value =1>  男</option>
+				</select>
+				</td>
 				</tr>
 				<tr>
 					<td >年龄：</td>
-					<td><input type="text" id="userAge" name="userId" ></td>
+					<td><input type="text" id="userAge" name="userAge" ></td>
 				</tr>
 				<tr>
 					<td >身份：</td>
 					<td>
 						<select id="power" name="power">
-						<option value ="教师">  教师</option>
-						<option value ="学生">  学生</option>
-
+						<option value =1>  教师</option>
+						<option value =2>  学生</option>
 					</select>
 					</td>
 				</tr>
