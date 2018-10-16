@@ -36,7 +36,7 @@
 
 	<div class="register-form">
 		<form action="${pageContext.request.contextPath }/RegisterServlet" method="post">
-			<table class="registertable" border="1" >
+			<table class="registertable"  >
 				<tr >
 					<td>姓名：</td>
 					<td><input type="text" id="userName" name="userName" /></td>
@@ -55,15 +55,24 @@
 				</tr>
 				<tr>
 					<td >身份：</td>
-					<td><input type="text" id="uerPower" name="userId" ></td>
+					<td>
+						<select id="power" name="power">
+						<option value ="教师">  教师</option>
+						<option value ="学生">  学生</option>
+
+					</select>
+					</td>
 				</tr>
 				<tr>
 					<td >密码：</td>
 					<td><input type="password" id="userPassword" name="userPassword"></td>
 				</tr>
+				<tr>
+					<td>&nbsp;<td>
+				</tr>
 
 			</table>
-
+			<input type="submit" value="注册" onclick="check()" />
 
 		</form>
 	</div>

@@ -241,3 +241,43 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
 }
+
+
+.register-form  input[type="submit"]{
+    font-size: 30px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: #0cb32b;
+    width: 100%;
+    padding: 18px 0;
+    border-bottom-left-radius: 15px;
+
+    border-bottom-right-radius: 15px;
+
+    cursor: pointer;
+}
+
+.register-form table{
+
+
+   font-family: "宋体";
+    font-size: 20px;
+}
+
+.register-form input[type="text"]{
+    width: 210px;
+    height: 25px;
+}
+
+.register-form input[type="password"]{
+    width: 210px;
+    height: 25px;
+}
+.register-form select {
+    text-align: center;
+    font-family: "宋体";
+    font-size: 20px;
+    width: 210px;
+    height: 25px;
+}
