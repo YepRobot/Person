@@ -183,6 +183,7 @@ body {
     text-align: center;
     
     border-radius: 20px;
+    background-color:none;
     width: 300px;
     height: 350px;
     position: absolute;
@@ -281,3 +282,48 @@ body {
     width: 210px;
     height: 25px;
 }
+.listtable{
+    width:100%;
+    border:1px solid #afafaf;
+    border-collapse:collapse;
+    margin-bottom:10px;
+}
+.listtable caption{
+    text-align:left;
+    font-size:16px;
+    padding:2px;
+    font-weight:bold;
+}
+
+.listtable td{
+    padding:5px;
+    border: 1px solid gray;
+    font-size:12px;
+    text-align:center;
+
+}
+
+.listtable tr:nth-child(2n){
+    background-color : #ebeaea;
+}
+
+.listtable .listheader{
+    background-color:skyblue;
+    text-align:center;
+}
+
+.listtable .listheader th{
+    padding:5px;
+    border: 1px solid gray;
+}
+
+.serchStu-form {
+    text-align: center;
+    width: 1000px;
+    height: 350px;
+    position: absolute;
+    left: 12%;
+    top:15%;
+
+}
+

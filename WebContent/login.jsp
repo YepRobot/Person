@@ -22,7 +22,7 @@
 				<div class="top-nav">
 					<span class="menu"></span>
 					<ul>
-						<li><a href="index.jsp" class="scroll">首页</a></li>
+						<li><a href="index.html" class="scroll">首页</a></li>
 						<li><a href="mypro.html" class="scroll">自序</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">Idea</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">学习</a></li>
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 
-	<div class="login-form">
+	<div  class="login-form" >
 		<form action="${pageContext.request.contextPath }/LoginServlet"
 			method="post" onsubmit="return check()">
 			<input type="text" class="text" id="uname" name="username"
