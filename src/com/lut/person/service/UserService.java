@@ -1,5 +1,8 @@
 package com.lut.person.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.lut.person.dao.UserDao;
 import com.lut.person.entity.Users;
 
@@ -46,6 +49,23 @@ public class UserService {
 		}
 		return result;
 		
+	}
+
+	/**
+	 * @作者 alex
+	 * @日期 2018年10月17日-下午10:11:06
+	 * @描述   
+	 */
+	public List<Users> finAll() {
+		List<Users> list = new ArrayList<Users>();
+		try {
+			list = ud.findAll();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			ud.closeConnection();
+		}
+		return list;
 	}
    
 }

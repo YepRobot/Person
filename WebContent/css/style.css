@@ -280,12 +280,13 @@ body {
     font-family: "宋体";
     font-size: 20px;
     width: 210px;
-    height: 25px;
+    height: 26px;
 }
 .listtable{
     width:100%;
     border:1px solid #afafaf;
     border-collapse:collapse;
+    font-size:15px;
     margin-bottom:10px;
 }
 .listtable caption{
@@ -298,7 +299,7 @@ body {
 .listtable td{
     padding:5px;
     border: 1px solid gray;
-    font-size:12px;
+    font-size:15px;
     text-align:center;
 
 }
@@ -308,7 +309,7 @@ body {
 }
 
 .listtable .listheader{
-    background-color:skyblue;
+    background-color: #0cb32b;
     text-align:center;
 }
 
@@ -325,5 +326,12 @@ body {
     left: 12%;
     top:15%;
 
+}
+
+.clickbutton {  
+    border: 1px solid #4D4D4D;
+    padding: 2px 10px;
+    cursor:pointer;
+    font-size:14px;
 }
 

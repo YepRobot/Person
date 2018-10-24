@@ -22,8 +22,8 @@
 				<div class="top-nav">
 					<span class="menu"></span>
 					<ul>
-						<li><a href="index.html" class="scroll">首页</a></li>
-						<li><a href="mypro.html" class="scroll">自序</a></li>
+						<li><a href="index.jsp" class="scroll">首页</a></li>
+<!-- 						<li><a href="mypro.html" class="scroll">自序</a></li> -->
 						<li><a href="https://www.baidu.com/" class="scroll">Idea</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">学习</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">推荐</a></li>
@@ -45,8 +45,10 @@
 					onfocus="this.value = '';"
 					onblur="if (this.value == '') {this.value = 'password';}">
 			</div>
+			
 
 			<input type="submit" value="登录" onclick="check()" />
+			 <font color="red" >${msg }</font>
 
 
 		</form>
