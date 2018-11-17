@@ -10,6 +10,12 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>学生管理</title>
+<script type="text/javascript">
+    function editMethod(user_ID) {
+		local
+	}
+</script>
+
 </head>
 
 
@@ -75,10 +81,9 @@
 					</c:choose>
 					</td>
 					<td>
-					 <a class="clickbutton" >编辑</a>
-	                            <a class="clickbutton" style="display:none;">确定</a>
-                            	<a class="clickbutton" style="display:none;">取消</a>
-	                            <a class="clickbutton" >删除</a>
+					 <a class="clickbutton" id="editBtn${user.user_ID }" 
+	                            href="javascript:editMethod(${user.user_ID })" >编辑</a>
+	                           
 					</td>
 					
 				</tr>

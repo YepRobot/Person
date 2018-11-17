@@ -1,13 +1,13 @@
 package com.lut.person.entity;
 
 public class Users {
-	private String user_ID;
-	private String user_Name;
-	private String user_Password;
-	private int user_Gender;
-	private int user_Age;
-	private int user_Power;
-	private int user_Status;
+	protected String user_ID;
+	protected String user_Name;
+	protected String user_Password;
+	protected int user_Gender;
+	protected int user_Age;
+	protected int user_Power;
+	protected int user_Status;
 
 	
 	
