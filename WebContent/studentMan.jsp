@@ -12,7 +12,7 @@
 <title>学生管理</title>
 <script type="text/javascript">
     function editMethod(user_ID) {
-		local
+    	 location.href="${pageContext.request.contextPath }/StuDetailsServlet?user_ID="+user_ID;
 	}
 </script>
 
@@ -82,7 +82,7 @@
 					</td>
 					<td>
 					 <a class="clickbutton" id="editBtn${user.user_ID }" 
-	                            href="javascript:editMethod(${user.user_ID })" >编辑</a>
+	                            href="javascript:editMethod(${user.user_ID })" >查看详情</a>
 	                           
 					</td>
 					

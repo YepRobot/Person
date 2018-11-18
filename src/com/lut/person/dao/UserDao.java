@@ -120,5 +120,41 @@ public class UserDao extends BaseDao{
 		}
 		return list;
 	}
+	/**
+	 * @作者 alex
+	 * @日期 2018年11月18日-下午11:51:46
+	 * @描述   
+	 */
+	public Users serchUserId(String user_ID) {
+		Users user=null;
+		try {
+			connection=getConnection();
+			String sql="select * from user_info where user_ID =?";
+			pstmt = connection.prepareStatement(sql);
+			pstmt.setString(1, user_ID);
+			rs = pstmt.executeQuery();
+			if(rs.next()){
+			user=new Users();
+			user.setUser_ID(rs.getString("user_ID"));
+			user.setUser_Name(rs.getString("user_Name"));
+			user.setUser_Age(rs.getInt("user_Age"));
+			user.setUser_Gender(rs.getInt("user_Gender"));
+			user.setUser_Power(rs.getInt("user_Power"));
+			user.setUser_Password(rs.getString("user_Password"));
+			user.setUser_Status(rs.getInt("user_Status"));;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				rs.close();
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} 
+		
+		return user;
+	}
 
 }
