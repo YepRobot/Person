@@ -67,5 +67,23 @@ public class UserService {
 		}
 		return list;
 	}
+
+	/**
+	 * @作者 alex
+	 * @日期 2018年11月18日-下午11:49:40
+	 * @描述   
+	 */
+	public Users serchUserId(String user_ID) {
+		Users user = new Users();
+		try {
+			user = ud.serchUserId(user_ID); 
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			ud.closeConnection();
+		}
+		
+		return user;
+	}
    
 }
