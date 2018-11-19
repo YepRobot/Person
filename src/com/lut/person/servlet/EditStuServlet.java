@@ -2,7 +2,6 @@ package com.lut.person.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,22 +9,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.lut.person.service.UserService;
 import com.lut.person.entity.Users;
+import com.lut.person.service.UserService;
 
 /**
- * Servlet implementation class SerchStuServlet
+ * Servlet implementation class EditStuServlet
  */
-@WebServlet("/SerchStuServlet")
-public class SerchStuServlet extends HttpServlet {
+@WebServlet("/EditStuServlet")
+public class EditStuServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public SerchStuServlet() {
+	public EditStuServlet() {
 		super();
-
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -37,14 +36,24 @@ public class SerchStuServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
+		String username = request.getParameter("userName");
+		String password = request.getParameter("userId");
+		String userId = request.getParameter("userPassword");
+		int userage = Integer.parseInt(request.getParameter("userAge"));
+		int usergender = Integer.parseInt(request.getParameter("userGender"));
+		
 
-		UserService usv = new UserService();
-		List<Users> users = usv.finAll();
+		UserService us = new UserService();
 
-		request.setAttribute("users", users);
-
-		request.getRequestDispatcher("studentMan.jsp").forward(request, response);
-
+		Users user = new Users();
+		user = us.EditStu(userId, username, password, usergender, userage);
+		if (user != null) {
+			out.print("<script>alert('修改学生信息成功!');location.href='EditStu.jsp'</script>");
+			request.setAttribute("users", user);
+		    request.getRequestDispatcher("EditStu.jsp").forward(request, response);
+		
+		}
+		
 	}
 
 	/**
@@ -53,7 +62,7 @@ public class SerchStuServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 

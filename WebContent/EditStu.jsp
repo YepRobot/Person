@@ -39,7 +39,7 @@
 						<li><a href="https://www.baidu.com/" class="scroll">学习</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">推荐</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">收藏夹</a></li>
-						<li style="color: black">&nbsp 欢迎 ${user.user_Name } <c:choose>
+						<li style="color: #113f6c">&nbsp 欢迎 ${user.user_Name } <c:choose>
 								<c:when test="${user.user_Power==1}">老师</c:when>
 								<c:when test="${user.user_Power==2}">同学</c:when>
 							</c:choose>
@@ -53,7 +53,7 @@
 	</div>
 
 	<div class="editStu-form">
-		<form action="${pageContext.request.contextPath }/RegisterServlet"
+		<form action="${pageContext.request.contextPath }/EditStuServlet"
 			method="post">
 			<table class="registertable">
 				<tr>
@@ -69,10 +69,12 @@
 				</tr>
 				<tr>
 					<td>性别：</td>
-					<td><input type="radio" id="userGender" name="userGender"
-						checked="checked" value=1 /><label for="userGender">男</label> <input
-						type="radio" id="userGender" name="userGender" /><label
-						for="userGender" value=0>女</label></td>
+					<td name="UserGender" id="User_Gender">
+					<c:choose>
+					<c:when test="${user.user_Gender==1}">男</c:when>
+					<c:when test="${user.user_Gender==0}">女</c:when>
+					</c:choose>
+					</td>
 				</tr>
 				<tr>
 					<td>年龄：</td>

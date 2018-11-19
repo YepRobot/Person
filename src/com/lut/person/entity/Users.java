@@ -43,9 +43,29 @@ public class Users {
 
 
 
+	/*********************************
+	 * @作者 alex
+	 * @日期 2018年11月19日
+	 * @描述 
+	 *********************************/
+	
+
+
+
 	public String getUser_ID() {
 		return user_ID;
 	}
+
+	public Users(String user_ID, String user_Name, String user_Password, int user_Gender, int user_Age) {
+		super();
+		this.user_ID = user_ID;
+		this.user_Name = user_Name;
+		this.user_Password = user_Password;
+		this.user_Gender = user_Gender;
+		this.user_Age = user_Age;
+	}
+
+
 
 	public void setUser_ID(String user_ID) {
 		this.user_ID = user_ID;

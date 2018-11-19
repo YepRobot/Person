@@ -85,5 +85,23 @@ public class UserService {
 		
 		return user;
 	}
+
+	/**
+	 * @作者 alex
+	 * @日期 2018年11月19日-下午7:22:16
+	 * @描述   
+	 */
+	public Users EditStu(String userId, String username, String password, int usergender, int userage) {
+		Users user = new Users();
+		try {
+			user = ud.EditStu( userId,  username, password, usergender, userage); 
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			ud.closeConnection();
+		}
+		
+		return user;
+	}
    
 }
