@@ -164,19 +164,17 @@ public class UserDao extends BaseDao {
 	 * @日期 2018年11月19日-下午7:23:20
 	 * @描述
 	 */
-	public Users EditStu(String userId, String username, String password, int usergender, int userage) {
-		Users user = null;
+	public int EditStu(String userId, String username, String password, int userage) {
+		int result=0;
 		try {
-			user = new Users();
 			connection = getConnection();
-			String sql = "UPDATE user_info SET user_Name =?,user_Password=?,user_Gender=?,user_Age=? Where user_ID =?;";
+			String sql = "UPDATE user_info SET user_Name =?,user_Password=?,user_Age=? WHERE user_ID =?";
 			pstmt = connection.prepareStatement(sql);
-			pstmt.setString(1, user.getUser_Name());
-			pstmt.setString(2, user.getUser_Password());
-			pstmt.setInt(3, user.getUser_Gender());
-			pstmt.setInt(4, user.getUser_Age());
-			pstmt.setString(5, user.getUser_ID());
-			rs = pstmt.executeQuery();
+			pstmt.setString(1, username);
+			pstmt.setString(2, password);	
+			pstmt.setInt(3, userage);
+			pstmt.setString(4, userId);
+		    result= pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -186,8 +184,7 @@ public class UserDao extends BaseDao {
 				e.printStackTrace();
 			}
 		}
-
-		return user;
+		return result;
 	}
 
 }

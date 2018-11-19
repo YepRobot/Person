@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.lut.person.entity.Users;
 import com.lut.person.service.UserService;
+import com.mysql.cj.xdevapi.Result;
 
 /**
  * Servlet implementation class EditStuServlet
@@ -37,20 +38,23 @@ public class EditStuServlet extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		String username = request.getParameter("userName");
-		String password = request.getParameter("userId");
-		String userId = request.getParameter("userPassword");
+		String password = request.getParameter("userPassword");
+		String userId = request.getParameter("userId");
 		int userage = Integer.parseInt(request.getParameter("userAge"));
-		int usergender = Integer.parseInt(request.getParameter("userGender"));
+		
 		
 
 		UserService us = new UserService();
 
 		Users user = new Users();
-		user = us.EditStu(userId, username, password, usergender, userage);
-		if (user != null) {
-			out.print("<script>alert('修改学生信息成功!');location.href='EditStu.jsp'</script>");
+		int result = us.EditStu(userId, username, password, userage);
+        user = us.serchUserId(userId);
+		
+		
+		
+		if(result != 0){
 			request.setAttribute("users", user);
-		    request.getRequestDispatcher("EditStu.jsp").forward(request, response);
+		    request.getRequestDispatcher("EditStu.jsp").forward(request, response);;
 		
 		}
 		

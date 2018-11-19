@@ -37,8 +37,8 @@ public class RegisterServlet extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		String username = request.getParameter("userName");
-		String password = request.getParameter("userId");
-		String userId = request.getParameter("userPassword");
+		String password = request.getParameter("userPassword");
+		String userId = request.getParameter("userId");
 		int userage = Integer.parseInt(request.getParameter("userAge"));
 		int usergender = Integer.parseInt(request.getParameter("userGender"));
 		int power = Integer.parseInt(request.getParameter("power"));
@@ -46,7 +46,7 @@ public class RegisterServlet extends HttpServlet {
 		
 		UserService us = new UserService();
 		
-		Users user = new Users();
+		Users user = new Users(userId, username , password, usergender, userage, power);
 		int result = us.regist(user);
 		if(result!=0){
 			//成功
@@ -55,7 +55,6 @@ public class RegisterServlet extends HttpServlet {
 			//失败
 			out.print("<script>alert('添加用户信息失败!');location.href='regist.jsp'</script>");
 		}
-		
 		}
 
 	/**
