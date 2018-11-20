@@ -16,7 +16,7 @@
 		<div class="header-bottom">
 			<div class="container">
 				<div class="logo">
-					<a href="http://www.baidu.com/index.html"> <img
+					<a href="http://www.gsut.edu.cn"> <img
 						src="image/logo.png" style="height: 55px; width: 200px"></a>
 				</div>
 				<div class="top-nav">

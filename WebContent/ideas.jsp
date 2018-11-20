@@ -1,32 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
- pageEncoding="UTF-8"%>
- <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+	pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>my person page </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-
-    <!--e8edd9-->
+<meta charset="UTF-8">
+<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>idea</title>
 </head>
+<body background="image/dc.jpg" style="text-align: center;">
+<div class="header">
 
-<body background="image/dc.jpg">
-    <div class="header">
-        
-        <div class="header-bottom">
-            <div class="container">
-                <div class="logo">
-                    <a href="http://www.baidu.com/index.html">
-                        <img src="image/logo.png" style="height: 55px;width: 200px"></a>
-                </div>
-                <div class="top-nav">
-                    <span class="menu"></span>
-                    <ul>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="logo">
+					<a href="http://www.gsut.edu.cn"> <img
+						src="image/logo.png" style="height: 55px; width: 200px"></a>
+				</div>
+				<div class="top-nav">
+					<span class="menu"></span>
+					 <ul>
                         <li><a href="index.jsp" class="scroll">首页</a></li>
                         <c:choose>
                          <c:when test = "${user.user_Power==1}">
@@ -48,24 +44,31 @@
                         </li>
                         <li><a href="login.jsp" class="scroll">退出系统</a></li>
                     </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="IdeaEditor-form">
+	<form action="${pageContext.request.contextPath }/IdeaEditServlet" method="post" >
+	<textarea rows="18" cols="60"  id="Ideas" name="Ideas"></textarea>
+	<input type="submit" value="Idea" onclick="check()" />
+	
+	
+	
+	
+	
+	</form>
+	</div>
+	
+	
+	<div class="header-top">
 
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
- <div class="header-top">
-            
-                <ul>
-                    <li><a href="mailto:18093432573@163.com"><span></span>18093432573@163.com</a></li>
-                </ul>
-            </div>
-            <div class="clearfix">
-           
-        </div>
-    
-
+		<ul>
+			<li><a href="mailto:18093432573@163.com"><span></span>18093432573@163.com</a></li>
+		</ul>
+	</div>
+	<div class="clearfix"></div>
 </body>
-
 </html>

@@ -18,7 +18,7 @@
 		<div class="header-bottom">
 			<div class="container">
 				<div class="logo">
-					<a href="http://www.baidu.com/index.html"> <img
+					<a href="http://www.gsut.edu.cn"> <img
 						src="image/logo.png" style="height: 55px; width: 200px"></a>
 				</div>
 				<div class="top-nav">
@@ -35,7 +35,7 @@
 								<li><a href="https://www.baidu.com/" class="scroll">我的大学</a></li>
 							</c:when>
 						</c:choose>
-						<li><a href="https://www.baidu.com/" class="scroll">Idea</a></li>
+						<li><a href="ideas.jsp" class="scroll">Idea</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">学习</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">推荐</a></li>
 						<li><a href="https://www.baidu.com/" class="scroll">收藏夹</a></li>

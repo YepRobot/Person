@@ -378,3 +378,42 @@ body {
    font-family: "宋体";
     font-size: 20px;
 }
+
+.IdeaEditor-form {
+  
+    
+    border-radius: 20px;
+    background-color:none;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.IdeaEditor-form textarea {
+	  width: 100%;
+	  padding: 1em 1em 1em 1em;
+	
+	  font-size: 15px;
+	  outline: none;
+	  background: white 6px 6px;
+	  border: none;
+	  font-weight: 100;
+	  border-bottom: 1px solid#484856;
+	  margin-top: 0em;
+}
+.IdeaEditor-form input[type="submit"]{
+    font-size: 30px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: #0cb32b;
+    width: 90%;
+    padding: 18px 0;
+    border-bottom-left-radius: 15px;
+
+    border-bottom-right-radius: 15px;
+
+    cursor: pointer;
+}
