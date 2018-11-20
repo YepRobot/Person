@@ -42,7 +42,10 @@
                         </c:choose>
                         <li><a href="ideas.jsp" class="scroll">Idea</a></li>
                         <li><a href="https://www.baidu.com/" class="scroll">学习</a></li>
-                        <li><a href="https://www.baidu.com/" class="scroll">推荐</a></li>
+                        <c:choose>
+                      <c:when test = "${user.user_Power==1}"> 
+                        <li><a href="https://www.baidu.com/" class="scroll">推荐</a></li></c:when>
+                        </c:choose>
                         <li><a href="https://www.baidu.com/" class="scroll">收藏夹</a></li>
                         <li style="color: black">&nbsp 欢迎 ${user.user_Name } <c:choose>
                         <c:when test = "${user.user_Power==1}">老师</c:when>
