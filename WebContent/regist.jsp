@@ -23,11 +23,11 @@
 				<div class="top-nav">
 					<span class="menu"></span>
 					<ul>
-						<li><a href="index.jsp" class="scroll">首页</a></li>
-						<li><a href="mypro.html" class="scroll">自序</a></li>
-						<li><a href="https://www.baidu.com/" class="scroll">Idea</a></li>
-						<li><a href="https://www.baidu.com/" class="scroll">学习</a></li>
-						<li><a href="https://www.baidu.com/" class="scroll">推荐</a></li>
+						<li><a href="login.jsp" class="scroll">首页</a></li>
+						<li><a href="login.jsp" class="scroll">自序</a></li>
+						<li><a href="login.jsp" class="scroll">Idea</a></li>
+						<li><a href="login.jsp" class="scroll">学习</a></li>
+						<li><a href="login.jsp" class="scroll">推荐</a></li>
 						<li><a href="login.jsp" class="scroll">登陆</a></li>
 					</ul>
 				</div>

@@ -67,15 +67,18 @@
 					<td><input type="text" id="userId" value=${users.user_ID }
 						name="userId"></td>
 				</tr>
+				
 				<tr>
 					<td>性别：</td>
-					<td name="UserGender" id="User_Gender">
+					
+					<td id="userGender${user.user_ID }">
 					<c:choose>
-					<c:when test="${user.user_Gender==1}">男</c:when>
-					<c:when test="${user.user_Gender==0}">女</c:when>
+					<c:when test="${users.user_Gender==1}">男</c:when>
+					<c:when test="${users.user_Gender==0}">女</c:when>
 					</c:choose>
 					</td>
 				</tr>
+				
 				<tr>
 					<td>年龄：</td>
 					<td><input type="text" id="userAge" value=${users.user_Age }
