@@ -10,6 +10,11 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>学生信息修改</title>
+    <link rel="icon" href="image/stu.png" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="image/stu.png" type="image/x-icon" />
+
+    <link rel="bookmark" href="image/stu.png" type="image/x-icon" />
 </head>
 
 <body background="image/dc.jpg" style="text-align: center;">

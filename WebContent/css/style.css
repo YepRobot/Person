@@ -417,3 +417,10 @@ body {
 
     cursor: pointer;
 }
+.serchStu-form .header-info{
+    float:left;
+}
+
+.serchStu-form .header-info .info-number{
+    font-weight:bold;
+}

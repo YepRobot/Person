@@ -5,9 +5,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>文件上传</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="icon" href="image/stu.png" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="image/stu.png" type="image/x-icon" />
+
+    <link rel="bookmark" href="image/stu.png" type="image/x-icon" />
+<title>推荐</title>
 </head>
-<body>
+<body background="image/dc.jpg" style="text-align: center;">
 <h1>文件上传</h1>
 <form method="post" action="${pageContext.request.contextPath }/UploadServlet" enctype="multipart/form-data">
     选择一个文件:

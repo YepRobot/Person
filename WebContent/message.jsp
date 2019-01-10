@@ -4,7 +4,13 @@
     "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="image/stu.png" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="image/stu.png" type="image/x-icon" />
+
+    <link rel="bookmark" href="image/stu.png" type="image/x-icon" />
 <title>文件上传结果</title>
 </head>
 <body>

@@ -9,6 +9,11 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="image/stu.png" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="image/stu.png" type="image/x-icon" />
+
+    <link rel="bookmark" href="image/stu.png" type="image/x-icon" />
 <title>Register</title>
 </head>
 <body background="image/dc.jpg" style="text-align: center;">

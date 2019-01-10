@@ -7,7 +7,11 @@
 
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <link rel="icon" href="image/stu.png" type="image/x-icon" />
 
+    <link rel="shortcut icon" href="image/stu.png" type="image/x-icon" />
+
+    <link rel="bookmark" href="image/stu.png" type="image/x-icon" />
 <title>用户登录</title>
 </head>
 <body background="image/dc.jpg" style="text-align: center;">
